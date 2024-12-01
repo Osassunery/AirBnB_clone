@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/8-places.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <h1>Airbnb Clone</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Filter Section -->
+<section class="filters">
+    <h3>Filter Options</h3>
+    <button>Search</button>
+    <ul>
+        <li>
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="city">City</option>
+                <option value="country">Country</option>
+                <option value="state">State</option>
+            </select>
+        </li>
+        <li>
+            <label for="amenities">Amenities:</label>
+            <select id="amenities" name="amenities">
+                <option value="wifi">Wi-Fi</option>
+                <option value="parking">Parking</option>
+                <option value="pool">Pool</option>
+                <option value="gym">Gym</option>
+            </select>
+        </li>
+    </ul>
+</section>
+
+<!-- Places Section -->
+<section class="places">
+    <h1>Places</h1>
+
+    <!-- Place Article 1 -->
+    <article>
+        <h2>Place 1</h2>
+        <div class="price_by_night">$100</div>
+        <div class="information">
+            <div class="max_guest">Guests: 4</div>
+            <div class="number_rooms">Rooms: 2</div>
+            <div class="number_bathrooms">Bathrooms: 1</div>
+        </div>
+        <div class="user">
+            <strong>Owner:</strong> John Doe
+        </div>
+        <div class="description">
+            A beautiful apartment in the heart of the city.
+        </div>
+    </article>
+
+    <!-- Place Article 2 -->
+    <article>
+        <h2>Place 2</h2>
+        <div class="price_by_night">$120</div>
+        <div class="information">
+            <div class="max_guest">Guests: 6</div>
+            <div class="number_rooms">Rooms: 3</div>
+            <div class="number_bathrooms">Bathrooms: 2</div>
+        </div>
+        <div class="user">
+            <strong>Owner:</strong> Jane Smith
+        </div>
+        <div class="description">
+            A cozy house with a garden and modern amenities.
+        </div>
+    </article>
+
+    <!-- Place Article 3 -->
+    <article>
+        <h2>Place 3</h2>
+        <div class="price_by_night">$150</div>
+        <div class="information">
+            <div class="max_guest">Guests: 2</div>
+            <div class="number_rooms">Rooms: 1</div>
+            <div class="number_bathrooms">Bathrooms: 1</div>
+        </div>
+        <div class="user">
+            <strong>Owner:</strong> Bob Brown
+        </div>
+        <div class="description">
+            A quaint studio apartment perfect for a short stay.
+        </div>
+    </article>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Airbnb Clone</p>
+    </div>
+</footer>
+
+</body>
+</html>
