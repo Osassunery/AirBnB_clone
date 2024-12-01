@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive AirBnB Clone</title>
+    <link rel="stylesheet" href="styles/102-common.css">
+    <link rel="stylesheet" href="styles/102-header.css">
+    <link rel="stylesheet" href="styles/102-footer.css">
+    <link rel="stylesheet" href="styles/102-filters.css">
+    <link rel="stylesheet" href="styles/102-places.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Responsive Place Details</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search places...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <h2>Filters</h2>
+        <select>
+            <option value="amenities">Amenities</option>
+            <option value="reviews">Reviews</option>
+        </select>
+        <button>Apply Filter</button>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="places-container">
+            <article class="place">
+                <!-- Amenities Section -->
+                <section class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>Pet Friendly</li>
+                        <li>TV</li>
+                        <li>Wifi</li>
+                        <li>Swimming Pool</li>
+                    </ul>
+                </section>
+
+                <!-- Reviews Section -->
+                <section class="reviews">
+                    <h2>Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Bob Dylan, 27th January 2017</h3>
+                            <p>Great place! Very comfortable and cozy.</p>
+                        </li>
+                        <li>
+                            <h3>From John Doe, 5th February 2018</h3>
+                            <p>Nice place, but a bit noisy at night.</p>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <!-- Add more place articles here if needed -->
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AirBnB Clone</p>
+    </footer>
+</body>
+
+</html>

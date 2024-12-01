@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible AirBnB Clone</title>
+    <link rel="stylesheet" href="styles/103-common.css">
+    <link rel="stylesheet" href="styles/103-header.css">
+    <link rel="stylesheet" href="styles/103-footer.css">
+    <link rel="stylesheet" href="styles/103-filters.css">
+    <link rel="stylesheet" href="styles/103-places.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header role="banner">
+        <h1>Responsive Place Details</h1>
+        <div class="search-bar">
+            <label for="search-input" class="sr-only">Search places</label>
+            <input id="search-input" type="text" placeholder="Search places..." aria-label="Search places" />
+            <button aria-label="Search" type="button">Search</button>
+        </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters" aria-labelledby="filter-section">
+        <h2 id="filter-section">Filters</h2>
+        <select aria-label="Select filter" role="listbox">
+            <option value="amenities">Amenities</option>
+            <option value="reviews">Reviews</option>
+        </select>
+        <button aria-label="Apply Filter" type="button">Apply Filter</button>
+    </section>
+
+    <!-- Main Content -->
+    <main role="main">
+        <div class="places-container">
+            <article class="place" role="article">
+                <section class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>Pet Friendly</li>
+                        <li>TV</li>
+                        <li>Wifi</li>
+                        <li>Swimming Pool</li>
+                    </ul>
+                </section>
+
+                <section class="reviews">
+                    <h2>Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Bob Dylan, 27th January 2017</h3>
+                            <p>Great place! Very comfortable and cozy.</p>
+                        </li>
+                        <li>
+                            <h3>From John Doe, 5th February 2018</h3>
+                            <p>Nice place, but a bit noisy at night.</p>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo">
+        <p>&copy; 2024 AirBnB Clone</p>
+    </footer>
+</body>
+
+</html>

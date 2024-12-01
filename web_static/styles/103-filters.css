@@ -1,0 +1,31 @@
+/* styles/103-filters.css */
+
+.filters {
+    margin: 20px 0;
+}
+
+.filters select,
+.filters button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+/* Ensure focus state is visible */
+.filters button:focus,
+.filters select:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
+
+.filters button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #005bb5;
+}

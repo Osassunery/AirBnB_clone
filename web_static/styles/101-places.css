@@ -1,0 +1,63 @@
+/* styles/101-places.css */
+
+/* Flexbox container for places */
+.places-container {
+    display: flex;
+    flex-wrap: wrap;  /* Allow the items to wrap onto the next line if needed */
+    gap: 20px;  /* Space between place articles */
+    justify-content: flex-start; /* Align items to the left */
+}
+
+/* Individual Place Article */
+.place {
+    flex: 1 1 30%;  /* Flex grow, flex shrink, and base width of 30% */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Amenities and Reviews Section */
+.amenities, .reviews {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+h3 {
+    font-size: 14px;
+    color: #333;
+}
+
+p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Responsive Design: Adjust flex properties on smaller screens */
+@media (max-width: 768px) {
+    .place {
+        flex: 1 1 45%;  /* On smaller screens, take up 45% width */
+    }
+}
+
+@media (max-width: 480px) {
+    .place {
+        flex: 1 1 100%;  /* On very small screens, take up full width */
+    }
+}

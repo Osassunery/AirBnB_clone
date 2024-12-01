@@ -1,0 +1,77 @@
+/* styles/103-common.css */
+
+/* General Body and Container styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333; /* Ensure text has enough contrast */
+}
+
+/* Ensure accessible color contrast for background and text */
+h1, h2, h3, h4 {
+    color: #2c3e50; /* Darker text for better contrast */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Focus states for accessibility */
+button:focus, input:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Accessibility for screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.place {
+    flex: 1 1 30%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Increase contrast between background and text */
+.place h2, .place h3, .place p {
+    color: #2c3e50;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .place {
+        flex: 1 1 45%; /* Two items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .place {
+        flex: 1 1 100%; /* One item per row */
+    }
+}

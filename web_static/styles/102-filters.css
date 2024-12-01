@@ -1,0 +1,22 @@
+/* styles/102-filters.css */
+
+.filters {
+    margin: 20px 0;
+}
+
+.filters select,
+.filters button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.filters button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #005bb5;
+}
